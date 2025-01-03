@@ -6,8 +6,7 @@ import Inscription from '../views/Inscription.vue'
 const routes = [
       // { path: '/', name: 'home', component: Home, },
       { path: '/connexion', name: 'Connexion', component: Connexion },
-      { path: '/inscription', name: 'Inscription', component: Inscription },
-  
+      { path: '/inscription', name: 'Inscription', component: Inscription }
 ]
 
 const router = createRouter({
