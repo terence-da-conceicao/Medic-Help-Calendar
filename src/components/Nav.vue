@@ -5,8 +5,10 @@
     <nav id="nav">
 
         <div id="menu">
-                <div class="lien" RouterLink to="/inscription">S'inscrire</div>
-                <div class="lien" RouterLink to="/connexion">Se connecter></div> 
+                <RouterLink to="/inscription" class="lien">S'inscrire</RouterLink>
+                <RouterLink to="/connexion" class="lien">Se connecter</RouterLink>
+                
+
         </div>
     </nav>
 </template>
@@ -20,22 +22,26 @@
     background-color: rgb(17, 142, 180);
     color: rgb(0, 0, 0);
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     width: 80vw;
     height: 100vh;
-    padding: 2em;
-    font-family: Arial, Helvetica, sans-serif}
+    padding: 2;
+    justify-content: center;
+}
 
     
 #menu {
-    padding: 40vh 0 50vh 0;
+    /* padding: 40vh 0 50vh 0; */
     display: flex;
     flex-direction: column;
 }
 
 .lien {
-    padding: 50px;
+    padding: 30px;
     border: solid 1px black;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
 }
 
 </style>
