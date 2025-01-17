@@ -13,4 +13,14 @@
     <Home/>
 </main>
 </template>
+<style>
+#main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-block:auto;
+
+}</style>
 

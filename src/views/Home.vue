@@ -1,6 +1,7 @@
-<script setup lang="ts">
+<script setup lang="ts" defer>
     import { useRoute } from "vue-router";
     import Welcome from "../components/Welcome.vue";
+    import Test from "../components/Test.vue"
     import { computed } from "vue";
 
 
@@ -12,16 +13,18 @@
 // Cette condition ci-dessous ne marche pas (<Welcome> est utilisé comme un type mais devrat être une vlaeur? Dois-je créer un type/une classe Welcome??)
 //     const displayed: String = (route.name === "home") ? <Welcome/> : <RouterView/>;
 
-Sinon : 
+// Sinon : 
 const isHomePage: Boolean = route.name === 'home';
 
 </script>
 
 <template>
 
- <div id="home">
+ <div id="homed">
+<!--Si j'appelle l'id "home", on dirait bien queVue confond avec le route.name car les liens ne marchent plus.-->
 
     <Welcome v-if="isHomePage" />
+     <!-- <Welcome/> -->
     <!-- problème de type??? -->
 
       <RouterView v-else/>
@@ -31,28 +34,20 @@ const isHomePage: Boolean = route.name === 'home';
 
 </template>
 
-<style>
-#home {
+ <style scoped>
+#homed {
     display: flex;
     flex-grow: 1;
     align-items: center;  
     justify-content: center;  
     padding: 0 5vw;
+    /* border: 5px solid red; */
     /* l'axe principal est horinzontal (x) car main est en flex-direction: row */
 
     color: white;
     background: linear-gradient(0deg, #07c7e9 0%, #ffffff 100%);
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.233);
-    font-size: 25px
-    
-}
+    font-size: 25px;
 
-#message {
-    /* padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 40vh;
-    padding-bottom: 40vh; */
-    /* margin: 0px 10px 50px 10px; */
-    border:1px solid red;
 }
 </style>
