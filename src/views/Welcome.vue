@@ -1,5 +1,7 @@
-<script setup lang="ts">
-import Test from "../components/Test.vue";
+<script setup lang="ts" defer>
+    import { useRoute } from "vue-router";
+    const route = useRoute();
+    console.log("route.name : ",route.name)
 </script>
 
 <template>

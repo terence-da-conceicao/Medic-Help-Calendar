@@ -1,3 +1,10 @@
+<script setup lang="ts">
+    import { useRoute } from "vue-router";
+    const route = useRoute();
+    console.log("route.name : ",route.name)
+</script>
+
+
 <template>
     <div class="formPage">
         <h1>CONNEXION</h1>
@@ -9,14 +16,10 @@
         </form>
     </div>
 </template>
-<script setup lang="ts">
 
-</script>
 <style>
 .formPage {
   display: flex;
   flex-direction: column;
-  /* padding: 10px; */
-  /* border : 5px solid red; */
 }
 </style>

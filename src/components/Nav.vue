@@ -5,9 +5,11 @@
     <nav id="nav">
 
         <div id="menu">
+                <RouterLink to="/" class="lien">Welcome</RouterLink>
                 <RouterLink to="/inscription" class="lien">S'inscrire</RouterLink>
                 <RouterLink to="/connexion" class="lien">Se connecter</RouterLink>
-                
+
+
 
         </div>
     </nav>
