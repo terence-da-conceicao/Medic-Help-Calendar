@@ -29,6 +29,8 @@
     height: 100vh;
     padding: 2;
     justify-content: center;
+    min-width: 250px;
+    max-width: 430px;
 }
 
     

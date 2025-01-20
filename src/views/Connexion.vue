@@ -9,7 +9,7 @@
     <div class="formPage">
         <h1>CONNEXION</h1>
         <p>Connectez-vous:</p>
-        <form>
+        <form style="border: solid red 5px" >
             <input type="text" placeholder="Username" name="filledUsername" required>
             <input type="text" placeholder="Password" name="filledPassword" required>
             <button type="submit">Valider</button>
@@ -21,5 +21,6 @@
 .formPage {
   display: flex;
   flex-direction: column;
+  box-sizing:border-box;
 }
 </style>

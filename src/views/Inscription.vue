@@ -8,7 +8,7 @@
     <div class="formPage">
         <h1>INSCRIPTION</h1>
         <p>Inscrivez-vous:</p>
-        <form>
+        <form style="border: solid red 5px;   align-items: center;">
             <input type="text" placeholder="Username" name="filledUsername" required>
             <input type="text" placeholder="Password" name="filledPassword" required>
             <button type="submit">Valider</button>
@@ -21,5 +21,19 @@
 .formPage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  border: solid yellow 5px;
+  box-sizing:content-box;
+  
+}
+input {
+    width: 70%;
+    /* box-sizing: border-box; */
+    justify-content: center;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+
 }
 </style>
